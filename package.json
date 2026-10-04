@@ -1,0 +1,26 @@
+{
+  "name": "piece-table-backend",
+  "version": "1.0.0",
+  "description": "Windows-local piece table text editing and source replay backend",
+  "type": "module",
+  "main": "dist/src/server.js",
+  "bin": {
+    "pt": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc --noEmit && node --import tsx --test tests/**/*.test.ts",
+    "start": "tsx src/server.ts",
+    "demo": "tsx src/demo.ts",
+    "cli": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
