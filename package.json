@@ -1,0 +1,20 @@
+{
+  "name": "piecetable-backend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test \"dist/test/core.test.js\"",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "cli": "node dist/src/cli.js",
+    "demo": "npm run build && node dist/src/cli.js demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
